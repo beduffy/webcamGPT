@@ -1,9 +1,5 @@
 import os
 import cv2
-import uuid
-
-import gradio as gr
-import numpy as np
 
 import webcamgpt
 
@@ -31,6 +27,7 @@ while(True):
         response = connector.simple_prompt(image=frame, prompt=prompt)
         print('Response:')
         print(response)
+        # TODO how to keep prompting in same context?
         # TODO save image and show elsewhere or? 
   
 # After the loop release the cap object 
